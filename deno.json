@@ -1,0 +1,13 @@
+{
+  "name": "@wei/pluralize",
+  "version": "0.1.0-alpha.1",
+  "exports": "./mod.ts",
+  "publish": {
+    "include": [
+      "README.md",
+      "LICENSE",
+      "mod.ts",
+      "pluralize.ts"
+    ]
+  }
+}
