@@ -1,12 +1,14 @@
 [![pluralize](https://socialify.git.ci/wei/pluralize/image?description=1&language=1&name=1&owner=1&pattern=Diagonal%20Stripes&theme=Auto)](https://socialify.git.ci/wei/pluralize?description=1&language=1&name=1&owner=1&pattern=Diagonal%20Stripes&theme=Auto)
 
-> A Deno module to pluralize and singularize English words.
+[![JSR][jsr-badge]][jsr-url]
+![Deno][deno-badge]
+![TypeScript][typescript-badge]
+[![CI][ci-badge]][ci-url]
+[![License: MIT][license-badge]][license-url]
 
-Pluralize and singularize any word with ease!
-
-This is a TypeScript fork of the original
+_This is a fork of the original
 [pluralize](https://github.com/plurals/pluralize) project, providing full
-TypeScript support and Deno compatibility.
+TypeScript support and Deno compatibility._
 
 ## Why Pluralize?
 
@@ -149,3 +151,12 @@ The `pluralize` module provides the following functions:
 ## License
 
 MIT
+
+[deno-badge]: https://img.shields.io/badge/Deno-000000?logo=Deno&logoColor=FFF&style=flat-square
+[typescript-badge]: https://img.shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square
+[license-badge]: https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square
+[license-url]: https://wei.mit-license.org
+[ci-badge]: https://img.shields.io/github/actions/workflow/status/wei/pluralize/publish.yml?logo=github&style=flat-square
+[ci-url]: https://github.com/wei/pluralize/actions/workflows/publish.yml
+[jsr-badge]: https://jsr.io/badges/@wei/pluralize?style=flat-square
+[jsr-url]: https://jsr.io/@wei/pluralize
