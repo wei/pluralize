@@ -1,6 +1,6 @@
 {
   "name": "@wei/pluralize",
-  "version": "8.0.1",
+  "version": "8.0.2",
   "exports": "./mod.ts",
   "publish": {
     "include": [
