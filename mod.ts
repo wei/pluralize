@@ -1,1 +1,1 @@
-export { default as pluralize } from "./pluralize.ts";
+export { default } from "./pluralize.ts";

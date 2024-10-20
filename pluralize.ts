@@ -204,9 +204,6 @@ pluralize.isSingular = checkWord(
 
 /**
  * Add a pluralization rule to the collection.
- *
- * @param {(string|RegExp)} rule
- * @param {string}          replacement
  */
 pluralize.addPluralRule = function (
   rule: RegExp | string,
@@ -217,9 +214,6 @@ pluralize.addPluralRule = function (
 
 /**
  * Add a singularization rule to the collection.
- *
- * @param {(string|RegExp)} rule
- * @param {string}          replacement
  */
 pluralize.addSingularRule = function (
   rule: RegExp | string,
@@ -230,8 +224,6 @@ pluralize.addSingularRule = function (
 
 /**
  * Add an uncountable word rule.
- *
- * @param {(string|RegExp)} word
  */
 pluralize.addUncountableRule = function (word: RegExp | string): void {
   if (typeof word === "string") {
@@ -246,9 +238,6 @@ pluralize.addUncountableRule = function (word: RegExp | string): void {
 
 /**
  * Add an irregular word definition.
- *
- * @param {string} single
- * @param {string} plural
  */
 pluralize.addIrregularRule = function (single: string, plural: string): void {
   plural = plural.toLowerCase();

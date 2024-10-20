@@ -32,7 +32,7 @@ npx jsr add @wei/pluralize
 ## Usage
 
 ```typescript
-import { pluralize } from "pluralize";
+import pluralize from "pluralize";
 ```
 
 ### Basic Pluralization
