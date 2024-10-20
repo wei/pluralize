@@ -1,4 +1,4 @@
-# Pluralize
+[![pluralize](https://socialify.git.ci/wei/pluralize/image?description=1&language=1&name=1&owner=1&pattern=Diagonal%20Stripes&theme=Auto)](https://socialify.git.ci/wei/pluralize?description=1&language=1&name=1&owner=1&pattern=Diagonal%20Stripes&theme=Auto)
 
 > A Deno module to pluralize and singularize English words.
 
@@ -25,8 +25,8 @@ Pluralize is available on [jsr](https://jsr.io/@wei/pluralize). You can install
 it using the following command:
 
 ```bash
-npx jsr add @wei/pluralize
 deno add jsr:@wei/pluralize
+npx jsr add @wei/pluralize
 ```
 
 ## Usage
@@ -113,21 +113,38 @@ console.log(pluralize.isPlural("test")); //=> false
 console.log(pluralize.isSingular("test")); //=> true
 ```
 
-## API Interface
+## API
 
-The `pluralize` module offers the following functions:
+The `pluralize` module provides the following functions:
 
-| Function                                                                       | Description                            |
-| ------------------------------------------------------------------------------ | -------------------------------------- |
-| `pluralize(word: string, count?: number, inclusive?: boolean): string`         | Main function to pluralize words       |
-| `pluralize.plural(word: string): string`                                       | Convert a word to its plural form      |
-| `pluralize.singular(word: string): string`                                     | Convert a word to its singular form    |
-| `pluralize.addPluralRule(rule: RegExp \| string, replacement: string): void`   | Add a custom pluralization rule        |
-| `pluralize.addSingularRule(rule: RegExp \| string, replacement: string): void` | Add a custom singularization rule      |
-| `pluralize.addIrregularRule(single: string, plural: string): void`             | Define an irregular pluralization rule |
-| `pluralize.addUncountableRule(word: string \| RegExp): void`                   | Specify words without a plural form    |
-| `pluralize.isPlural(word: string): boolean`                                    | Check if a word is in plural form      |
-| `pluralize.isSingular(word: string): boolean`                                  | Check if a word is in singular form    |
+### `pluralize(word: string, count?: number, inclusive?: boolean): string`
+
+- Converts a word to its plural form based on the count.
+- If `inclusive` is true, it includes the count in the output.
+
+### `addPluralRule(rule: RegExp, replacement: string): void`
+
+- Adds a custom pluralization rule.
+
+### `addSingularRule(rule: RegExp, replacement: string): void`
+
+- Adds a custom singularization rule.
+
+### `addIrregularRule(singular: string, plural: string): void`
+
+- Defines an irregular pluralization rule.
+
+### `addUncountableRule(word: string): void`
+
+- Specifies a word that does not have a plural form.
+
+### `isPlural(word: string): boolean`
+
+- Checks if the given word is plural.
+
+### `isSingular(word: string): boolean`
+
+- Checks if the given word is singular.
 
 ## License
 
